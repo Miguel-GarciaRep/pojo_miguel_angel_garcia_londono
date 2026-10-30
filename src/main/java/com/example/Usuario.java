@@ -4,10 +4,10 @@ public class Usuario {
 
     // Atributos
 
-    String idUsuario;
-    String nombre;
-    String correoElectronico;
-    int librosPrestados;
+    private String idUsuario;
+    private String nombre;
+    private String correoElectronico;
+    private int librosPrestados;
 
     // Getters
 
@@ -26,6 +26,12 @@ public class Usuario {
 
     // Setters
 
+    public void setIdUsuario(String idUsuario) {
+        this.idUsuario = idUsuario;
+    }
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
     public void setCorreoElectronico(String correoElectronico) {
         this.correoElectronico = correoElectronico;
     }

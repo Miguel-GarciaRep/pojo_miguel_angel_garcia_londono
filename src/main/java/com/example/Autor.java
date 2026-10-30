@@ -26,6 +26,12 @@ public class Autor {
 
     // Setters
 
+    public void setIdAutor(String idAutor) {
+        this.idAutor = idAutor;
+    }
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
     public void setNacionalidad(String nacionalidad) {
         this.nacionalidad = nacionalidad;
     }

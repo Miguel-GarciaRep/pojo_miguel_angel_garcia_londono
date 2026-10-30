@@ -34,6 +34,18 @@ public class Libro {
 
     // Serrers
 
+    public void setIsbn(String isbn) {
+        this.isbn = isbn;
+    }
+    public void setTitulo(String titulo) {
+        this.titulo = titulo;
+    }
+    public void setAutor(Autor autor) {
+        this.autor = autor;
+    }
+    public void setAnioPublicacion(int anioPublicacion) {
+        this.anioPublicacion = anioPublicacion;
+    }
     public void setPrecio(double precio) {
         this.precio = precio;
     }
