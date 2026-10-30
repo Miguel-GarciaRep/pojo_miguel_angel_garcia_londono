@@ -36,7 +36,11 @@ public class Usuario {
         this.correoElectronico = correoElectronico;
     }
     public void setLibrosPrestados(int librosPrestados) {
-        this.librosPrestados = librosPrestados;
+        if (librosPrestados < 0)
+            System.out.println("Libros prestados negativos, ingrese otro");
+        else {
+            this.librosPrestados = librosPrestados;
+        }
     }
 
     // Constructores y sobrecargas

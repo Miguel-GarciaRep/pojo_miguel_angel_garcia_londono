@@ -22,7 +22,7 @@ public class Libro {
     public Autor getAutor() {
         return autor;
     }
-    public int getAnioPublicacicon() {
+    public int getAnioPublicacion() {
         return anioPublicacion;
     }
     public double getPrecio() {
@@ -44,13 +44,25 @@ public class Libro {
         this.autor = autor;
     }
     public void setAnioPublicacion(int anioPublicacion) {
-        this.anioPublicacion = anioPublicacion;
+        if (anioPublicacion > 0)
+            System.out.println("Año negativo, ingrese otro");
+        else {
+            this.anioPublicacion = anioPublicacion;
+        }
     }
     public void setPrecio(double precio) {
-        this.precio = precio;
+        if (precio < 0 )
+            System.out.println("Precio negativo, ingrese otro");
+        else {
+            this.precio = precio;
+        }
     }
     public void setStock(int stock) {
-        this.stock = stock;
+        if (stock < 0 )
+            System.out.println("Stock negrativo, ingrese otro");
+        else {
+            this.stock = stock;
+        }
     }
 
     // Constructores y sobrecargas

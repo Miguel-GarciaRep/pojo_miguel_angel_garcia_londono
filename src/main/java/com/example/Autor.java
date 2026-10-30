@@ -36,7 +36,11 @@ public class Autor {
         this.nacionalidad = nacionalidad;
     }
     public void setAnioNacimiento(int anioNacimiento) {
-        this.anioNacimiento = anioNacimiento;
+        if (anioNacimiento < 0 )
+            System.out.println("Año de nacimiento negaitvo, ingrese otro");
+        else {
+            this.anioNacimiento = anioNacimiento;
+        }
     }
 
     // Constructores y sus sobrecargas
