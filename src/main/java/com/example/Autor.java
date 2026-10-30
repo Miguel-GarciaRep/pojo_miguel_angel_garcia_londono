@@ -8,6 +8,7 @@ public class Autor {
     private String nombre;
     private String nacionalidad;
     private int anioNacimiento;
+    private int anioActual = 2026;
 
     // Getters
 
@@ -36,8 +37,8 @@ public class Autor {
         this.nacionalidad = nacionalidad;
     }
     public void setAnioNacimiento(int anioNacimiento) {
-        if (anioNacimiento < 0 )
-            System.out.println("Año de nacimiento negaitvo, ingrese otro");
+        if (anioNacimiento < 0 || anioNacimiento < 1900 || anioNacimiento > anioActual)
+            System.out.println("Año de nacimiento negaitvo o muy lejano al actual, ingrese otro");
         else {
             this.anioNacimiento = anioNacimiento;
         }
