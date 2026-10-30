@@ -15,7 +15,7 @@ public class Usuario {
         return idUsuario;
     }
     public String getNombre() {
-        return idUsuario;
+        return nombre;
     }
     public String getCorreoElectronico() {
         return correoElectronico;

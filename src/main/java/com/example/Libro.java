@@ -44,7 +44,7 @@ public class Libro {
         this.autor = autor;
     }
     public void setAnioPublicacion(int anioPublicacion) {
-        if (anioPublicacion > 0)
+        if (anioPublicacion < 0)
             System.out.println("Año negativo, ingrese otro");
         else {
             this.anioPublicacion = anioPublicacion;
